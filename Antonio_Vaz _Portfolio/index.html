@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Antonio Vaz Portfolio</title>
+    <link rel="icon" href="icon/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body id="my-scrollbar">
+    <nav class='fixed-nav' id="navbar">
+        <a class="nav-item" id="nav-home" onclick="goToHome()">Home</a>
+        <a class="nav-item" id="nav-about" onclick="goToAbout()">//About</a>
+        <a class="nav-item" id="nav-projects" onclick="goToProjects()">//Projects</a>
+        <a class="nav-item" id="nav-contact" onclick="goToContact()">//Contact</a>
+    </nav>
+
+    <section id="home">
+        <div class="help"></div>
+        
+        <div class="sphere sphereAnimation"></div>
+        <div class="circleFollowMouse"></div>
+        <div class="container-start">
+    
+        <h1 class="title title-start">Hi im<br> <span class="title-light">António</span></h1>
+            <div class="code-part" id="code-start">
+                <h3 class="code-text"> 
+                    <span class="opencode">&lt</span><span class="midcode">ul</span><span class="opencode">&gt</span>
+                    <span>
+                        <br>&nbsp;&nbsp;  <span class="opencode">&lt/</span><span class="midcode">li</span><span class="opencode">&gt</span>Designer <span class="opencode">&lt/</span><span class="midcode">li</span><span class="opencode">&gt</span>
+                        <br>&nbsp;&nbsp;  <span class="opencode">&lt/</span><span class="midcode">li</span><span class="opencode">&gt</span>Front End Developer <span class="opencode">&lt/</span><span class="midcode">li</span><span class="opencode">&gt</span><br>
+                    <span class="opencode">&lt/</span><span class="midcode">ul</span><span class="opencode">&gt</span>
+                </h3>
+            </div>
+        </div>
+
+    </section>
+    
+    <section id="about">
+
+        <img src="svg/boat.svg" class="svg boat" onclick="changeBoat()"></img>
+        <img src="svg/book.svg" class="svg book" onclick="changeBook()"></img>
+        <img src="svg/footbal.svg" class="svg footbal" onclick="changeFootbal()"></img>
+        <img src="svg/music.svg" class="svg music" onclick="changeMusic()"></img>
+        <img src="svg/paper_plane.svg" class="svg paper_plane" onclick="changeAirplane()"></img>
+        <img src="svg/peice_puzzle.svg" class="svg peice_puzzle" onclick="changePuzzle()"></img>
+
+
+        <div class="code-about">
+            <p class="text-about"> 
+                <span class="opencode">&lt</span><span class="midcode">p</span><span class="opencode">&gt</span>
+                <span class="textToChange"> 
+                    Hello, I'm António Vaz from Lisbon in Portugal. I'm eighteen years old and I can create a few 
+                    designs if needed, but my true passion is programming. I'm currently working on front-end development,
+                     but I'm hoping to be a full stack developer in the near future. If you're interested in learning more 
+                     about me, click on the icons. Thanks for taking the time to explore.
+                </span>
+                <span class="opencode">&lt/</span><span class="midcode">p</span><span class="opencode">&gt</span>
+            </p>
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <div class="middle-point"></div>
+
+        <div class="project-images">
+            <video autoplay loop muted  class="item computer-screen" src="projects_vid/computer.mp4">Your browser does not support the video element.</video>
+            <video autoplay loop muted  class="item laptop-screen" src="projects_vid/laptop.mp4">Your browser does not support the video element. </video>
+        </div>
+
+        
+        <div class="project-images">
+            <video autoplay loop muted class="item tablet-screen" src="projects_vid/tablet.mp4">Your browser does not support the video element.</video>
+            <video autoplay loop muted class="item smartphone-screen" src="projects_vid/smartphone.mp4">Your browser does not support the video element.</video>
+        </div>
+
+
+    </section>
+
+    <section id="contact">
+        <div class="help"></div>
+
+        <h3 class="contact-text">Hey if you need anything that i can help let me know !  </h3>
+        
+        <div data-clipboard-text="antoniosilvavaz04@gmail.com" class="email-container">
+            <h3 class="email-text label">antoniosilvavaz04@gmail.com</h3>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="help"></div>
+
+        <h4 class="footer-text"><span class="footer-text-1">I was going to do something but</span> Uncaught ReferenceError: coffe is not defined at <u>myBody</u></h4>
+    </section>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/smooth-scrollbar.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,824 @@
+@font-face {
+    font-family: Antipasto-DemiBold;
+    src: url(letter/antipasto/AntipastoPro-DemiBold.ttf);
+}
+
+@font-face {
+    font-family: Antipasto-Regular;
+    src: url(letter/antipasto/AntipastoPro-Medium.ttf);
+}
+
+@font-face {
+    font-family: Antipasto-ExtraLight;
+    src: url(letter/antipasto/AntipastoPro-Extralight.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(letter/inter/InterTight-VariableFont_wght.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#my-scrollbar {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.sphere{
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    right: 0;
+    width: 10vh;
+    height: 10vh;
+    background-color: #2e2c2c;
+    border-radius: 100%;
+    z-index: 1;
+    animation: sphereAnimation 1s ease-in-out 200ms 1 forwards;
+}
+
+.sphereAnimationClass{
+    animation: sphereAnimation1 1s ease-in-out 200ms 1 forwards;
+}
+
+@keyframes sphereAnimation {
+    0%{left: 50%; top: 0;}
+    100%{left: 0%; top: 55%;}
+}
+
+@keyframes sphereAnimation1 {
+    0%{left: 0%; top: 55%;}
+    100%{left: 0%; top: 145%;}
+}
+
+
+
+/* HOME SECTION START*/
+
+#home{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #282828;
+    z-index: 2;
+    cursor: none;
+}
+
+.circleFollowMouse{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #f7f8fa;
+    border-radius: 50%;
+    mix-blend-mode:screen;
+}
+
+.help{
+    height: 0.1px;
+    width: 100vw;
+    background-color: #282828;
+    position: relative;
+}
+
+#navbar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 2% auto;
+    width: 100vw;
+    height: fit-content;
+    z-index: 4;
+}
+
+.nav-item{
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: #4a4a4a;
+    margin: auto 1%;
+    font-size: 1.5rem;
+}
+
+#nav-home{
+    color: #fff;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+}
+
+.title{
+    z-index: 2;
+    font-family: Antipasto-Regular;
+    font-weight: 400;
+    font-size: 6.3rem;
+    line-height: 85%;
+}
+
+.container-start{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.title-start{
+    left: 0;
+    right: 0;
+    width: 100%;
+    color: #fff;
+    z-index: 2;
+}
+
+.title-light{
+    font-family: Antipasto-ExtraLight;
+    color: #fff;
+}
+
+.code-part{
+    position: relative;
+    padding: 2% 4% 2% 2%;
+    width: fit-content;
+    left: 0;
+    right: 0;
+    margin: 4% auto;
+    background-color: #212121;
+    box-shadow: 15px 10px #000000;
+    z-index: 2;
+}
+
+.code-text{
+    position:static;
+    width: 100%;
+    color: white;
+    font-family: Antipasto-Regular;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 100%;
+    text-align: left;
+    z-index: 2;
+}
+
+.opencode{
+    color: #89DDFF;
+}
+
+.midcode{
+    color: #F07178;
+}
+
+/* HOME SECTION END*/
+
+
+/* ABOUT SECTION START*/
+
+#about{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.svg{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 48%;
+    padding: 1%;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.svg:hover{
+    cursor: pointer;
+}
+
+/*START OF EXPLOSION ANIMATION*/
+@keyframes boatAnimation {
+    0%{left: 0; top: 48%;}
+    100%{left: -40%; top: 18%;} 
+}
+
+@keyframes musicAnimation {
+    0%{left: 0; top: 48%;}
+    100%{left: 35%; top: 18%;} 
+}
+
+@keyframes booknimation {
+    0%{left: 0; top: 48%;}
+    100%{left: 67%; top: 50%;} 
+}
+
+@keyframes footbalAnimation {
+    0%{left: 0; top: 48%;}
+    100%{left: 27%; top: 78%;} 
+}
+
+@keyframes peice_puzzleAnimation {
+    0%{left: 0; top: 48%;}
+    100%{left: -37%; top: 82%;} 
+}
+
+@keyframes paper_planeAnimation {
+    0%{left: 0; top: 48%;}
+    100%{left: -67%; top: 48%;} 
+}
+/*END EXPLOSION ANIMATION*/
+
+
+/*DON´T GET LOST IN ALL OF THESE ANIMATIONS CUS I GOT 100 TIMES*/
+
+/*START MOVE UP AND DOWN ANIMATION*/
+
+@keyframes boatUpDownAnimation {
+    0%{left: -40%; top:18%;}
+    100%{left: -40%; top: 14%;} 
+}
+
+@keyframes musicUpDownAnimation {
+    0%{left: 35%; top: 18%;}
+    100%{left: 35%; top: 22%;} 
+}
+
+@keyframes bookUpDownnimation {
+    0%{left: 67%; top: 50%;}
+    100%{left: 62%; top: 54%;} 
+}
+
+@keyframes footbalUpDownAnimation {
+    0%{left: 27%; top: 78%;}
+    100%{left: 27%; top: 82%;} 
+}
+
+@keyframes peice_puzzleUpDownAnimation {
+    0%{left: -37%; top: 82%;}
+    100%{left: -37%; top: 78%;} 
+}
+
+@keyframes paper_planeUpDownAnimation {
+    0%{left: -67%; top:48%;}
+    100%{left: -62%; top: 44%;} 
+}
+
+/*END MOVE UP AND DOWN ANIMATION*/
+.code-about{
+    position: relative;
+    width: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: auto;
+    left: 0;
+    right: 0;
+    background-color: #212121;
+    z-index: 2;
+}
+
+.text-about{
+    padding: 13px 19px;
+    width: fit-content;
+    color: white;
+    font-family: Antipasto-Regular;
+    font-weight: 400;
+    font-size: 1.7rem;
+    text-align: left;
+}
+
+/* ABOUT SECTION END*/
+
+/* PROJECTS SECTION START*/
+
+#projects{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 135vh;
+    background-color: #282828;
+}
+
+.middle-point{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.item{
+    margin-top: 5%;
+}
+
+.computer-screen{
+    float: left;
+    width: 50%;
+}
+
+.laptop-screen{
+    float: right;
+    width: 50%;
+}
+
+.tablet-screen{
+    float: left;
+    width: 50%;
+}
+
+.smartphone-screen{
+    float: right;
+    width: 50%;
+}
+
+/* PROJECTS SECTION END*/
+
+/* CONTACT SECTION START*/
+#contact{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 92vh;
+    background-color: #282828;
+}
+
+.contact-text{
+    position: relative;
+    margin: 8% auto 0;
+    width: 600px;
+    color: #FFFF;
+    font-size: 2.8rem;
+    font-family:Antipasto-DemiBold;
+}
+
+.email-container{
+    width: fit-content;
+    margin: 3% auto;
+    background-color: #F07178;
+}
+
+.email-container:hover{
+    cursor: pointer;
+}
+
+.email-text{
+    padding: 50px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: #FFFF;
+    font-size: 2rem;
+    display: block;
+    font-family:Inter;
+}
+
+i{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 5rem;
+    color: white;
+}
+/* CONTACT SECTION END*/
+
+/* FOOTER SECTION START*/
+#footer{
+    width: 100%;
+    height: 8vh;
+    background-color: #290000;
+}
+
+.footer-text{
+    position: relative;
+    width: 90%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family:Antipasto-Regular;
+    color: #ff8080;
+    font-size: 1.5rem;
+}
+
+.footer-text-1{
+    color: white;
+}
+
+/* FOOTER SECTION END*/
+
+@media (max-width: 1440px){
+    .contact-text{
+        width: 50%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #projects{
+        height: 250vw;
+    }
+
+    .computer-screen{
+        width: 100%;
+    }
+    
+    .laptop-screen{
+        width: 100%;
+    }
+    
+    .tablet-screen{
+        width: 100%;
+    }
+    
+    .smartphone-screen{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 768px){
+    #navbar{
+        margin-top: 3%;
+    }
+    .nav-item{
+        margin-left: 3%;
+    }
+    .circleFollowMouse{
+        visibility: hidden;
+    }
+    
+    /*START OF EXPLOSION ANIMATION*/
+    @keyframes boatAnimation {
+        0%{left: 0; top: 48%;}
+        100%{left: -40%; top: 18%;} 
+    }
+
+    @keyframes musicAnimation {
+        0%{left: 0; top: 48%;}
+        100%{left: 35%; top: 14%;} 
+    }
+
+    @keyframes booknimation {
+        0%{left: 0; top: 48%;}
+        100%{left: 69%; top: 50%;} 
+    }
+
+    @keyframes footbalAnimation {
+        0%{left: 0; top: 48%;}
+        100%{left: 27%; top: 80%;} 
+    }
+
+    @keyframes peice_puzzleAnimation {
+        0%{left: 0; top: 48%;}
+        100%{left: -37%; top: 86%;} 
+    }
+
+    @keyframes paper_planeAnimation {
+        0%{left: 0; top: 48%;}
+        100%{left: -69%; top: 48%;} 
+    }
+    /*END EXPLOSION ANIMATION*/
+    
+
+    /*START MOVE UP AND DOWN ANIMATION*/
+
+    @keyframes boatUpDownAnimation {
+        0%{left: -40%; top:18%;}
+        100%{left: -40%; top: 14%;} 
+    }
+
+    @keyframes musicUpDownAnimation {
+        0%{left: 35%; top: 14%;}
+        100%{left: 35%; top: 18%;} 
+    }
+
+    @keyframes bookUpDownnimation {
+        0%{left: 69%; top: 50%;}
+        100%{left: 64%; top: 54%;} 
+    }
+
+    @keyframes footbalUpDownAnimation {
+        0%{left: 27%; top: 80%;}
+        100%{left: 27%; top: 84%;} 
+    }
+
+    @keyframes peice_puzzleUpDownAnimation {
+        0%{left: -37%; top: 86%;}
+        100%{left: -37%; top: 82%;} 
+    }
+
+    @keyframes paper_planeUpDownAnimation {
+        0%{left: -69%; top:48%;}
+        100%{left: -64%; top: 44%;} 
+    }
+
+    #projects{
+        height: 250vw;
+    }
+
+    .svg{
+        width: 90px;
+        height: 90px;
+    }
+
+    .computer-screen{
+        width: 100%;
+    }
+    
+    .laptop-screen{
+        width: 100%;
+    }
+    
+    .tablet-screen{
+        width: 100%;
+    }
+    
+    .smartphone-screen{
+        width: 100%;
+    }
+
+    .contact-text{
+        margin-top: 15%;
+        width: 70%;
+        font-size: 2.2rem;
+    }
+
+    .email-text{
+        padding: 20px;
+    }
+}
+
+@media (max-width:425px) {
+    #navbar{
+        margin-top: 8%;
+    }
+    .nav-item{
+        font-size: 1.4rem;
+        margin-left: 1.4%;
+    }
+
+    .title-start{
+        font-size: 6rem;
+    }
+
+    .code-part{
+        padding: 10px;
+        box-shadow: 0px 0px #000000;
+    }
+
+    .code-text{
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .code-about{
+        width: 90%;
+        font-size: 2rem;
+    }
+
+     /*START OF EXPLOSION ANIMATION*/
+     @keyframes boatAnimation {
+        0%{left: 0; top: 48%;}
+        100%{left: -40%; top: 18%;} 
+    }
+
+    @keyframes musicAnimation {
+        0%{left: 0; top: 48%;}
+        100%{left: 35%; top: 14%;} 
+    }
+
+    @keyframes booknimation {
+        0%{left: 0; top: 48%;}
+        100%{left: 69%; top: 50%;} 
+    }
+
+    @keyframes footbalAnimation {
+        0%{left: 0; top: 48%;}
+        100%{left: 27%; top: 80%;} 
+    }
+
+    @keyframes peice_puzzleAnimation {
+        0%{left: 0; top: 48%;}
+        100%{left: -37%; top: 86%;} 
+    }
+
+    @keyframes paper_planeAnimation {
+        0%{left: 0; top: 48%;}
+        100%{left: -69%; top: 48%;} 
+    }
+    /*END EXPLOSION ANIMATION*/
+    
+
+    /*START MOVE UP AND DOWN ANIMATION*/
+
+    @keyframes boatUpDownAnimation {
+        0%{left: -60%; top:18%;}
+        100%{left: -60%; top: 14%;} 
+    }
+
+    @keyframes musicUpDownAnimation {
+        0%{left: 55%; top: 14%;}
+        100%{left: 55%; top: 18%;} 
+    }
+
+    @keyframes bookUpDownnimation {
+        0%{left: 0%; top: 17%;}
+        100%{left: 0%; top: 15%;} 
+    }
+
+    @keyframes footbalUpDownAnimation {
+        0%{left: 55%; top: 80%;}
+        100%{left: 55%; top: 84%;} 
+    }
+
+    @keyframes peice_puzzleUpDownAnimation {
+        0%{left: -60%; top: 86%;}
+        100%{left: -60%; top: 82%;} 
+    }
+
+    @keyframes paper_planeUpDownAnimation {
+        0%{left: -0%; top:86%;}
+        100%{left: -0%; top: 85%;} 
+    }
+
+    #projects{
+        height: 250vw;
+    }
+
+    .contact-text{
+        margin-top: 100px;
+        width: 95%;
+    }
+
+    .email-container{
+        width: 100%;
+    }
+
+    .email-text{
+        font-size: 1.5rem;
+    }
+
+    .footer-text{
+        font-size: 1.3rem;
+        width: 100%;
+    }
+}
+
+@media (max-width:375px) {
+
+    .title{
+        font-size: 24vw;
+    }
+
+    .code-text{
+        font-size: 8vw;
+    }
+    
+    .nav-item{
+        font-size: 1.3rem;
+        margin-left: 2px;        
+    }
+
+    .text-about{
+        font-size: 5vw;
+        margin-top: 24%;
+    }
+
+    .svg{
+        width: 80px;
+        height: 80px;
+    }
+
+    /*START OF EXPLOSION ANIMATION*/
+    @keyframes boatAnimation {
+        0%{left: 0; top: 48%;}
+        100%{left: -60%; top: 18%;} 
+    }
+
+    @keyframes musicAnimation {
+        0%{left: 0; top: 48%;}
+        100%{left: 55%; top: 20%;} 
+    }
+
+    @keyframes booknimation {
+        0%{left: 0; top: 48%;}
+        100%{left: 0; top: 14%;} 
+    }
+
+    @keyframes footbalAnimation {
+        0%{left: 0; top: 48%;}
+        100%{left: 55%; top: 85%;} 
+    }
+
+    @keyframes peice_puzzleAnimation {
+        0%{left: 0; top: 48%;}
+        100%{left: -60%; top: 86%;} 
+    }
+
+    @keyframes paper_planeAnimation {
+        0%{left: 0; top: 48%;}
+        100%{left: -0%; top: 88%;} 
+    }
+    /*END EXPLOSION ANIMATION*/
+    
+
+    /*START MOVE UP AND DOWN ANIMATION*/
+
+    @keyframes boatUpDownAnimation {
+        0%{left: -60%; top:18%;}
+        100%{left: -60%; top: 14%;} 
+    }
+
+    @keyframes musicUpDownAnimation {
+        0%{left: 55%; top: 20%;}
+        100%{left: 55%; top: 15%;} 
+    }
+
+    @keyframes bookUpDownnimation {
+        0%{left: 0%; top: 14%;}
+        100%{left: 0%; top: 18%;} 
+    }
+
+    @keyframes footbalUpDownAnimation {
+        0%{left: 55%; top: 85%;}
+        100%{left: 55%; top: 89%;} 
+    }
+
+    @keyframes peice_puzzleUpDownAnimation {
+        0%{left: -60%; top: 86%;}
+        100%{left: -60%; top: 90%;} 
+    }
+
+    @keyframes paper_planeUpDownAnimation {
+        0%{left: -0%; top:88%;}
+        100%{left: -0%; top: 85%;} 
+    }
+
+    .footer-text{
+        font-size: 1rem;
+    }
+
+    .circleFollowMouse{
+        display: none;
+    }
+}
+
+@media (max-width:320px) {
+
+    #navbar{
+        width: 70%;
+    }
+
+    .title{
+        font-size: 24vw;
+    }
+
+    .code-text{
+        font-size: 8vw;
+    }
+    
+    .nav-item{
+        font-size: 1.3rem;
+        margin-left: 2px;        
+    }
+
+    .text-about{
+        font-size: 6vw;
+        margin-top: 24%;
+    }
+    .code-text{
+        width: 100%;
+    }
+
+    .svg{
+        width: 80px;
+        height: 80px;
+    }
+
+    .email-text{
+        font-size: 6vw;
+    }
+}
