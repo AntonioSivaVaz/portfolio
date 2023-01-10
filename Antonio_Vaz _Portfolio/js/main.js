@@ -70,13 +70,13 @@ function checkHome(){
 
 	if(position.top >= 0 && position.bottom <= window.innerHeight) {
 		document.getElementById("nav-home").innerHTML = "Home";
-		document.getElementById('nav-home').style.color = '#fff'
+		document.getElementById('nav-home').style.color = '#9cdcfe'
 		document.getElementById("nav-about").innerHTML = "//About";
-		document.getElementById('nav-about').style.color = '#4a4a4a'
+		document.getElementById('nav-about').style.color = '#6a9955'
 		document.getElementById("nav-projects").innerHTML = "//Projects";
-		document.getElementById('nav-projects').style.color = '#4a4a4a'
+		document.getElementById('nav-projects').style.color = '#6a9955'
 		document.getElementById("nav-contact").innerHTML = "//Contact";
-		document.getElementById('nav-contact').style.color = '#4a4a4a'
+		document.getElementById('nav-contact').style.color = '#6a9955'
 		scrollbar.addListener(checkAbout);
 		scrollbar.addListener(checkProjects);
 		scrollbar.addListener(checkContact);
@@ -84,7 +84,7 @@ function checkHome(){
   
   else{
 	document.getElementById("nav-home").innerHTML = "//Home";
-    document.getElementById('nav-home').style.color = '#4a4a4a'
+    document.getElementById('nav-home').style.color = '#6a9955'
   }
 }
 
@@ -96,13 +96,13 @@ function checkAbout(){
 
 	if(position.top >= 4 && position.bottom <= window.innerHeight) {
 		document.getElementById("nav-home").innerHTML = "//Home";
-		document.getElementById('nav-home').style.color = '#4a4a4a'
+		document.getElementById('nav-home').style.color = '#6a9955'
 		document.getElementById("nav-about").innerHTML = "About";
-		document.getElementById('nav-about').style.color = '#000'
+		document.getElementById('nav-about').style.color = '#9cdcfe'
 		document.getElementById("nav-projects").innerHTML = "//Projects";
-		document.getElementById('nav-projects').style.color = '#4a4a4a'
+		document.getElementById('nav-projects').style.color = '#6a9955'
 		document.getElementById("nav-contact").innerHTML = "//Contact";
-		document.getElementById('nav-contact').style.color = '#4a4a4a'
+		document.getElementById('nav-contact').style.color = '#6a9955'
 		scrollbar.addListener(checkHome);
 		scrollbar.addListener(checkProjects);
 		scrollbar.addListener(checkContact);
@@ -110,7 +110,7 @@ function checkAbout(){
 	}
 	else{
 		document.getElementById("nav-about").innerHTML = "//About";
-		document.getElementById('nav-about').style.color = '#4a4a4a'
+		document.getElementById('nav-about').style.color = '#6a9955'
 	}
 }
 
@@ -121,13 +121,13 @@ function checkProjects(){
 
 	if(position.top >= 0 && position.bottom <= window.innerHeight) {
 		document.getElementById("nav-home").innerHTML = "//Home";
-		document.getElementById('nav-home').style.color = '#4a4a4a';
+		document.getElementById('nav-home').style.color = '#6a9955';
 		document.getElementById("nav-about").innerHTML = "//About";
-		document.getElementById('nav-about').style.color = '#4a4a4a'
+		document.getElementById('nav-about').style.color = '#6a9955'
 		document.getElementById("nav-projects").innerHTML = "Projects";
-		document.getElementById('nav-projects').style.color = '#fff'
+		document.getElementById('nav-projects').style.color = '#9cdcfe'
 		document.getElementById("nav-contact").innerHTML = "//Contact";
-		document.getElementById('nav-contact').style.color = '#4a4a4a'
+		document.getElementById('nav-contact').style.color = '#6a9955'
 		scrollbar.addListener(checkHome);
 		scrollbar.addListener(checkAbout);
 		scrollbar.addListener(checkContact);
@@ -135,7 +135,7 @@ function checkProjects(){
   
   else{
 	document.getElementById("nav-projects").innerHTML = "//Projects";
-    document.getElementById('nav-projects').style.color = '#4a4a4a';
+    document.getElementById('nav-projects').style.color = '#6a9955';
   }
 }
 
@@ -146,16 +146,16 @@ function checkContact(){
 
 	if(position.top >= 0 && position.bottom <= window.innerHeight) {
 		document.getElementById("nav-home").innerHTML = "//Home";
-		document.getElementById('nav-home').style.color = '#4a4a4a'
+		document.getElementById('nav-home').style.color = '#6a9955'
 
 		document.getElementById("nav-about").innerHTML = "//About";
-		document.getElementById('nav-about').style.color = '#4a4a4a'
+		document.getElementById('nav-about').style.color = '#6a9955'
 
 		document.getElementById("nav-projects").innerHTML = "//Projects";
-		document.getElementById('nav-projects').style.color = '#4a4a4a'
+		document.getElementById('nav-projects').style.color = '#6a9955'
 
 		document.getElementById("nav-contact").innerHTML = "Contact";
-		document.getElementById('nav-contact').style.color = '#fff'
+		document.getElementById('nav-contact').style.color = '#9cdcfe'
 		scrollbar.addListener(checkHome);
 		scrollbar.addListener(checkAbout);
 		scrollbar.addListener(checkProjects);
@@ -163,7 +163,7 @@ function checkContact(){
 
 	if(position.top < window.innerHeight && position.bottom >= 0) {
 		document.getElementById("nav-contact").innerHTML = "Contact";
-		document.getElementById('nav-contact').style.color = '#fff'
+		document.getElementById('nav-contact').style.color = '#9cdcfe'
 		scrollbar.addListener(checkHome);
 		scrollbar.addListener(checkAbout);
 		scrollbar.addListener(checkProjects);
@@ -171,7 +171,7 @@ function checkContact(){
   
   else{
 	document.getElementById("nav-contact").innerHTML = "//Contact";
-    document.getElementById('nav-contact').style.color = '#4a4a4a'
+    document.getElementById('nav-contact').style.color = '#6a9955'
   }
 }
 

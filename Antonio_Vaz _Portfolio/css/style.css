@@ -106,7 +106,7 @@ body{
     font-family: 'Inter Tight', sans-serif;
     font-weight: 700;
     text-decoration: none;
-    color: #4a4a4a;
+    color: #9cdcfe;
     margin: auto 1%;
     font-size: 1.5rem;
 }
@@ -192,7 +192,7 @@ body{
     text-align: center;
     width: 100%;
     height: 100vh;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
 }
 
 .svg{
@@ -314,11 +314,13 @@ body{
     position: relative;
     text-align: center;
     width: 100%;
-    height: 135vh;
+    padding-bottom: 40px;
+    height: max-content;
     background-color: #282828;
 }
 
 .middle-point{
+    background-color: red;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -327,28 +329,65 @@ body{
     margin: auto;
 }
 
-.item{
-    margin-top: 5%;
+.project-container{
+    width: 100%;
+    max-width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
 }
 
-.computer-screen{
-    float: left;
-    width: 50%;
+.project-item{
+    position: relative;
+    margin-right: 2%;
+    margin-left: 2%;
+    height: 300px;
+    width: 500px;
+    padding: 0.4%;
 }
 
-.laptop-screen{
-    float: right;
-    width: 50%;
+.projects-text{
+    font-family: Inter;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.511);
 }
 
-.tablet-screen{
-    float: left;
-    width: 50%;
+.project-icon{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    color: green;
+    border-radius:0;
+    font-size: 30px;
+    margin-top: 24px;
+    margin-right: 20px;
 }
 
-.smartphone-screen{
-    float: right;
-    width: 50%;
+.green{
+    color: rgb(14, 203, 71);
+}
+
+.orange{
+    color: orange;
+}
+
+.red{
+    color: rgb(135, 0, 0);
+}
+
+.one{
+    background-color: purple;
+}
+
+.two{
+    background-color: #290000;
+}
+
+.three{
+    background-color: #F07178;
 }
 
 /* PROJECTS SECTION END*/
@@ -358,13 +397,14 @@ body{
     position: relative;
     text-align: center;
     width: 100%;
-    height: 92vh;
+    height: max-content;
     background-color: #282828;
+    padding: 10px 0 13%;
 }
 
 .contact-text{
     position: relative;
-    margin: 8% auto 0;
+    margin: 8% auto 30px;
     width: 600px;
     color: #FFFF;
     font-size: 2.8rem;
@@ -372,13 +412,29 @@ body{
 }
 
 .email-container{
-    width: fit-content;
-    margin: 3% auto;
+    width: 600px;
+    margin: auto;
     background-color: #F07178;
 }
 
 .email-container:hover{
     cursor: pointer;
+}
+
+.email-container:active .label:after{
+    content: "COPIED";
+}
+
+.email-container:active{
+    background-color: green;
+}
+
+
+.label:after{
+    content:'antoniosilvavaz04@gmail.com';
+}
+.label:hover:after{
+    content:'COPY';
 }
 
 .email-text{
@@ -430,36 +486,29 @@ i{
 
 /* FOOTER SECTION END*/
 
-@media (max-width: 1440px){
-    .contact-text{
-        width: 50%;
-    }
-}
-
 @media (max-width: 1024px) {
-    #projects{
-        height: 250vw;
+
+    .project-container{
+        margin: auto;
+        text-align: center;
+        display: block;
     }
 
-    .computer-screen{
-        width: 100%;
+    .project-item{
+        margin: 4% auto;
+        background-color: red;
+        width: 80%;
+        height: 400px;
     }
-    
-    .laptop-screen{
-        width: 100%;
-    }
-    
-    .tablet-screen{
-        width: 100%;
-    }
-    
-    .smartphone-screen{
-        width: 100%;
-    }
+
     
 }
 
 @media (max-width: 768px){
+    #home{
+        height: 800px;
+    }
+
     #navbar{
         margin-top: 3%;
     }
@@ -535,43 +584,40 @@ i{
         100%{left: -64%; top: 44%;} 
     }
 
-    #projects{
-        height: 250vw;
-    }
-
     .svg{
         width: 90px;
         height: 90px;
     }
 
-    .computer-screen{
-        width: 100%;
-    }
-    
-    .laptop-screen{
-        width: 100%;
-    }
-    
-    .tablet-screen{
-        width: 100%;
-    }
-    
-    .smartphone-screen{
-        width: 100%;
+    .project-item{
+        height: 300px;
     }
 
+
     .contact-text{
-        margin-top: 15%;
         width: 70%;
         font-size: 2.2rem;
     }
 
+    .email-container{
+        width: max-content;
+        height: 100px;
+    }
+
+    .label{
+        font-size: 25px;
+    }
+
     .email-text{
-        padding: 20px;
+        padding: 30px;
     }
 }
 
 @media (max-width:425px) {
+    #home{
+        height: 800px;
+    }
+
     #navbar{
         margin-top: 8%;
     }
@@ -662,15 +708,6 @@ i{
     @keyframes paper_planeUpDownAnimation {
         0%{left: -0%; top:86%;}
         100%{left: -0%; top: 85%;} 
-    }
-
-    #projects{
-        height: 250vw;
-    }
-
-    .contact-text{
-        margin-top: 100px;
-        width: 95%;
     }
 
     .email-container{
