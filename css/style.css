@@ -34,6 +34,10 @@ body{
     height: 100vh;
 }
 
+a{
+    text-decoration: none;
+}
+
 
 .sphere{
     position: absolute;
@@ -345,25 +349,144 @@ body{
     margin-left: 2%;
     height: 300px;
     width: 500px;
-    padding: 0.4%;
+    transition: all 1s;
 }
+
+
+.project-item:hover .projects-text-container{
+    transform: translateY(-0%);
+    opacity: 1;
+    visibility: visible;
+}
+
+.project-img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.projects-text-container{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.869);
+    transform: translateY(-500%);
+    z-index: 1;
+    opacity: 0;
+    transition: all 1s;
+    visibility: hidden;
+}
+
+.projects-tecnologys{
+    display: flex;
+    justify-content: end;
+    margin: 5px 40px 20px;
+    text-align: left;
+    font-family: Inter;
+    font-size: 20px;
+    color: white;
+}
+
+.text-container{
+    text-align: right;
+    float: left;
+    margin: 0%;
+    width: 50%;
+}
+
+.bar-container{
+    float: right;
+    width: 50%;
+}
+
+.bar{
+    margin: 5px 0 24px;
+}
+
+.bar90{
+    border-radius: 90px;
+    background-color:darkslateblue;
+    height: 20px;
+    width: 80%;
+}
+
+.bar80{
+    border-radius: 90px;
+    background-color: violet;
+    height: 20px;
+    width: 80%;
+}
+
+.bar70{
+    border-radius: 90px;
+    background-color: palegreen;
+    height: 20px;
+    width: 70%;
+}
+
+.bar60{
+    border-radius: 90px;
+    background-color: purple;
+    height: 20px;
+    width: 60%;
+}
+
+.bar50{
+    border-radius: 90px;
+    background-color: lightcoral;
+    height: 20px;
+    width: 60%;
+}
+
+.bar40{
+    border-radius: 90px;
+    background-color: pink;
+    height: 20px;
+    width: 40%;
+}
+
+.bar20{
+    border-radius: 90px;
+    background-color: lightseagreen;
+    height: 20px;
+    width: 60%;
+}
+
+.bar10{
+    border-radius: 90px;
+    background-color: greenyellow;
+    height: 20px;
+    width: 10%;
+}
+
 
 .projects-text{
     font-family: Inter;
-    font-size: 30px;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.511);
 }
 
 .project-icon{
-    display: flex;
-    justify-content: end;
+    margin: auto 20px;
     position: relative;
+    top: 90%;
+    transform: translateY(-90%);
     color: green;
     border-radius:0;
     font-size: 30px;
-    margin-top: 24px;
-    margin-right: 20px;
 }
 
 .green{
@@ -418,6 +541,7 @@ body{
 }
 
 .email-container:hover{
+    background-color: #952d32;
     cursor: pointer;
 }
 
