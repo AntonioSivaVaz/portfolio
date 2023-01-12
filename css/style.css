@@ -630,6 +630,15 @@ i{
 }
 
 @media (max-width: 768px){
+
+    .project-item:hover .projects-text-container{
+        transform: translateY(-100%);
+        opacity: 0;
+        z-index: 0;
+        visibility: hidden;
+    }
+
+
     #home{
         height: 800px;
     }
